@@ -129,40 +129,39 @@ Quick gut:
 
 ### Draft current workflow
 
-```text
-CURRENT WORKFLOW (Tổng: ~10-30 phút)
-
-[Sinh viên làm lab/assignment] (Thời gian làm tuỳ bài)
-         ↓
-[Phát sinh vấn đề/lỗi] (—)
-         ↓
-[Hỏi trợ giảng/coach, nhắn group] (1 phút)
-         ↓
-    /               \
-[Hỏi khi vắng/bận] (chờ 10–20 phút)  [Được giúp kịp] (2-5 phút)
-  ↓                                   ↓
-[Tự mò hoặc chờ lâu] (10–20 phút)  [Giải quyết nhanh] (1–2 phút)
-  ↓
-[Tiến độ bị ảnh hưởng]
+```mermaid
+flowchart TD
+    A["Sinh viên làm lab/assignment<br/>(Thời gian làm tuỳ bài)"]
+    B["Phát sinh vấn đề/lỗi"]
+    C["Hỏi trợ giảng/coach, nhắn group<br/>(1 phút)"]
+    D["Hỏi khi vắng/bận<br/>(chờ 10–20 phút)"]
+    E["Được giúp kịp<br/>(2-5 phút)"]
+    F["Tự mò hoặc chờ lâu<br/>(10–20 phút)"]
+    G["Giải quyết nhanh<br/>(1–2 phút)"]
+    H["Tiến độ bị ảnh hưởng"]
+    
+    A --> B
+    B --> C
+    C --> D
+    C --> E
+    D --> F
+    E --> G
+    F --> H
 ```
 
 ### Draft future workflow
 
-```text
-FUTURE STATE (Tổng: ~2-6 phút)
-
-[Sinh viên làm lab/assignment]
-         ↓
-[Gặp lỗi/thắc mắc]
-         ↓
-[Hỏi AI trợ lý (FAQ/bot hỗ trợ real-time)] (1 phút )
-         ↓
-/                       \
-[AI giải quyết được] (1–2 phút)      [Câu hỏi phức tạp/ngoài danh mục]
-          ↓                         ↓
-     [Xử lý xong]                 [Trao cho trợ giảng/coach, ưu tiên] (3-5 phút)
-          ↓                         ↓
-    [Tiếp tục học/làm]            [Giải đáp nhanh cho các case đặc biệt]
+```mermaid
+flowchart TD
+    A["Sinh viên làm lab/assignment"] --> B["Gặp lỗi/thắc mắc"]
+    B --> C["Hỏi AI trợ lý<br/>(FAQ/bot hỗ trợ real-time)<br/>(1 phút)"]
+    C --> D{"AI giải quyết được?"}
+    D -- Có --> E["Xử lý xong<br/>(1–2 phút)"]
+    D -- Không --> F["Câu hỏi phức tạp/<br/>ngoài danh mục"]
+    F --> G["Trao cho trợ giảng/coach,<br/>ưu tiên<br/>(3-5 phút)"]
+    G --> H["Giải đáp nhanh cho<br/>các case đặc biệt"]
+    E --> I["Tiếp tục học/làm"]
+    H --> I
 ```
 
 ### Problem 3 câu:
@@ -209,32 +208,20 @@ Quick gut:
 
 ### Draft current workflow
 
-```text
-CURRENT WORKFLOW (Tổng: ~5-10 phút mỗi môn/tuần, nhưng dễ lỡ hạn)
-
-[Nhận thông báo từ nhiều kênh] (2 phút)
-      ↓
-[Tự ghi lại hoặc nhớ trong đầu] (3 phút)
-      ↓
-[Thông báo bị trôi/quá tải]
-      ↓
-[Quên hoặc lỡ deadline] (mất thời gian xin lại/quản lý điểm)
-      ↓
-[Phải xin nộp muộn hoặc bị trừ điểm]
+```mermaid
+flowchart TD
+    A["Nhận thông báo từ nhiều kênh<br/>(2 phút)"] --> B["Tự ghi lại hoặc nhớ trong đầu<br/>(3 phút)"]
+    B --> C["Thông báo bị trôi/quá tải"]
+    C --> D["Quên hoặc lỡ deadline<br/>(mất thời gian xin lại/quản lý điểm)"]
+    D --> E["Phải xin nộp muộn hoặc bị trừ điểm"]
 ```
 
 ### Draft future workflow
 
-```text
-FUTURE STATE (Tổng: ~2 phút/môn mỗi tuần, rất khó lỡ hạn)
-
-[Hệ thống deadline tập trung tự động] (—)
-          ↓
-[AI tổng hợp & gửi nhắc riêng] (tự động, 0 phút sinh viên thao tác)
-          ↓
-[Nhắc trước deadline (1-3 ngày) + hôm hạn chót] (30 giây xác nhận)
-          ↓
-[Sinh viên nhận thông báo, xác nhận đã xem] (1 phút)
-          ↓
-[Điền bài/nộp đúng hạn, nhắc lại nếu thiếu] (1 phút nộp)
----
+```mermaid
+flowchart TD
+    A["Hệ thống deadline tập trung tự động<br/>(—)"] --> B["AI tổng hợp & gửi nhắc riêng<br/>(tự động, 0 phút sinh viên thao tác)"]
+    B --> C["Nhắc trước deadline 1-3 ngày<br/>+ hôm hạn chót (30 giây xác nhận)"]
+    C --> D["Sinh viên nhận thông báo,<br/>xác nhận đã xem (1 phút)"]
+    D --> E["Điền bài/nộp đúng hạn,<br/>nhắc lại nếu thiếu (1 phút nộp)"]
+```
