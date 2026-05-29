@@ -111,14 +111,14 @@ Mình đã chọn lọc ra 3 case study kinh điển nhất trên thế giới v
 ## Workflow before
 
 ```mermaid  
-flowchart TD  
-    A\[Sinh viên viết code\] \-\>|Báo lỗi đỏ| B(Đọc log lỗi)  
-    B \--\>|Không hiểu logic/Tiếng Anh| C\[Paste toàn bộ đề \+ lỗi vào ChatGPT\]  
-    C \--\> D\[ChatGPT trả đoạn code fix sẵn\]  
-    D \--\> E\[Sinh viên Copy & Paste đè lên code cũ\]  
-    E \--\> F\[Code chạy pass testcase nhưng rỗng kiến thức\]  
+flowchart TD
+    A[Sinh viên viết code] ->|Báo lỗi đỏ| B(Đọc log lỗi)  
+    B -->|Không hiểu logic/Tiếng Anh| C[Paste toàn bộ đề + lỗi vào ChatGPT]  
+    C --> D[ChatGPT trả đoạn code fix sẵn]  
+    D --> E[Sinh viên Copy & Paste đè lên code cũ]  
+    E --> F[Code chạy pass testcase nhưng rỗng kiến thức]  
      
-    classDef bottleneck fill:\#ff9999,stroke:\#333,stroke-width:2px;  
+    classDef bottleneck fill:#ff9999,stroke:#333,stroke-width:2px;  
     class C bottleneck;  
     class D bottleneck;  
     class E bottleneck;
@@ -139,8 +139,9 @@ Bước 3 và 4: Bước cầu cứu AI và nhận code giải sẵn. Đây là 
 
 ## Workflow after
 
+```mermaid
 flowchart TD  
-    A[Sinh viên viết code lỗi] --> B[Nạp code vào Socratic Tutor AI]  
+    A[Sinh viên viết code] -->|Báo lỗi đỏ| B(Đưa vào hệ thống)
     B --> C{AI phân tích lỗi}  
     C -->|Rule: Cấm xuất code| D[Đưa ra Hint 1: Khoanh vùng lỗi + Hỏi gợi mở]  
     D --> E[Sinh viên suy nghĩ & tự sửa]  
@@ -155,6 +156,8 @@ flowchart TD
      
     classDef student fill:#cce5ff,stroke:#007bff,stroke-width:2px;  
     class A,E student;
+
+```
 
 ## Before/after impact
 
