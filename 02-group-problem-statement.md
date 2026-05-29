@@ -110,7 +110,7 @@ Mình đã chọn lọc ra 3 case study kinh điển nhất trên thế giới v
 
 ## Workflow before
 
-\`\`\`mermaid  
+```mermaid  
 flowchart TD  
     A\[Sinh viên viết code\] \-\>|Báo lỗi đỏ| B(Đọc log lỗi)  
     B \--\>|Không hiểu logic/Tiếng Anh| C\[Paste toàn bộ đề \+ lỗi vào ChatGPT\]  
@@ -123,7 +123,7 @@ flowchart TD
     class D bottleneck;  
     class E bottleneck;
 
-\`\`\`
+```
 
 | Bước | Actor | Input | Output | Thời gian/tần suất | Ghi chú |  
 | :--- | :--- | :--- | :--- | :--- | :--- |  
@@ -139,7 +139,7 @@ Bước 3 và 4: Bước cầu cứu AI và nhận code giải sẵn. Đây là 
 
 ## Workflow after
 
-\`\`\`mermaid  
+```mermaid  
 flowchart TD  
     A\[Sinh viên viết code lỗi\] \--\> B\[Nạp code vào Socratic Tutor AI\]  
     B \--\> C{AI phân tích lỗi}  
@@ -160,7 +160,7 @@ flowchart TD
     class A student;  
     class E student;
 
-\`\`\`
+```
 
 ## Before/after impact
 
