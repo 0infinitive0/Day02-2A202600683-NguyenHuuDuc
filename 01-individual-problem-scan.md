@@ -64,34 +64,25 @@ Quick gut:
 
 ### Draft current workflow
 
-```text
-CURRENT WORKFLOW (Tổng: ~20-40 phút)
-
-[Nhận thông báo] (1 phút)
-      ↓
-[Truy cập nhiều nền tảng LMS/cloud/group] (5-10 phút)
-      ↓
-[Không tìm được/hỏng link?]——→[Hỏi bạn/nhóm] (5-10 phút chờ/lần hỏi)
-      ↓                                  ↓
-   [Tự mò/đợi hỗ trợ] (5-15 phút)    [Nhận hướng dẫn/trợ giúp] (5 phút)
-      ↓
-[Có/không tìm ra tài liệu]
+```mermaid
+flowchart TD
+    A[Nhận thông báo (1 phút)] --> B[Truy cập nhiều nền tảng LMS/cloud/group (1-2 phút)]
+    B --> C{Không tìm được/hỏng link?}
+    C -- Có --> D[Hỏi bạn/nhóm (2-5 phút)]
+    D --> E[Nhận hướng dẫn/trợ giúp (2-10 phút)]
+    C -- Không hoặc vẫn chưa được --> F[Tự mò/đợi hỗ trợ (5-15 phút)]
+    E --> G[Truy cập đúng tài liệu (1 phút)]
+    F --> H[Không tìm ra tài liệu / Có tìm được (0-15 phút)]
 ```
 
 ### Draft future workflow
 
-```text
-FUTURE STATE (Tổng: ~3-5 phút)
-
-[Nhận 1 thông báo tổng hợp] (1 phút)
-      ↓
-[Click vào portal học liệu duy nhất] (1 phút)
-      ↓
-[AI gợi ý tài liệu phù hợp cá nhân] (1 phút)
-      ↓
-[Nếu vẫn gặp lỗi, hỏi AI FAQ/chatbot] (1-2 phút)
-      ↓
-[Truy cập đúng tài liệu ngay]
+```mermaid
+flowchart TD
+    A[Nhận 1 thông báo tổng hợp<br/>(1 phút)] --> B[Click vào portal học liệu duy nhất<br/>(1 phút)]
+    B --> C[AI gợi ý tài liệu phù hợp cá nhân<br/>(1 phút)]
+    C --> D[Nếu vẫn gặp lỗi, hỏi AI FAQ/chatbot<br/>(1-2 phút)]
+    D --> E[Truy cập đúng tài liệu ngay]
 ```
 
 ### Problem 2 câu:
