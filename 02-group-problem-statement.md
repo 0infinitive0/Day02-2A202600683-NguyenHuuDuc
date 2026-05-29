@@ -139,28 +139,22 @@ Bước 3 và 4: Bước cầu cứu AI và nhận code giải sẵn. Đây là 
 
 ## Workflow after
 
-```mermaid  
 flowchart TD  
-    A\[Sinh viên viết code lỗi\] \--\> B\[Nạp code vào Socratic Tutor AI\]  
-    B \--\> C{AI phân tích lỗi}  
-    C \--\>|Rule: Cấm xuất code| D\[Đưa ra Hint 1: Khoanh vùng lỗi \+ Hỏi gợi mở\]  
-    D \--\> E\[Sinh viên suy nghĩ & tự sửa\]  
-    E \--\> F{Hệ thống kiểm tra}  
-    F \--\>|Vẫn sai| G\[Đưa ra Hint 2: Giải thích chi tiết luồng logic\]  
-    G \--\> E  
-    F \--\>|Pass| H(((Sinh viên tự sửa đúng & Hiểu bản chất)))  
-    F \--\>|Thất bại \>3 lần| I\[Tag TA vào hỗ trợ 1-1\]  
+    A[Sinh viên viết code lỗi] --> B[Nạp code vào Socratic Tutor AI]  
+    B --> C{AI phân tích lỗi}  
+    C -->|Rule: Cấm xuất code| D[Đưa ra Hint 1: Khoanh vùng lỗi + Hỏi gợi mở]  
+    D --> E[Sinh viên suy nghĩ & tự sửa]  
+    E --> F{Hệ thống kiểm tra}  
+    F -->|Vẫn sai| G[Đưa ra Hint 2: Giải thích chi tiết luồng logic]  
+    G --> E  
+    F -->|Pass| H(((Sinh viên tự sửa đúng & Hiểu bản chất)))  
+    F -->|Thất bại >3 lần| I[Tag TA vào hỗ trợ 1-1]  
      
-    classDef agent fill:\#d4edda,stroke:\#28a745,stroke-width:2px;  
-    class C agent;  
-    class D agent;  
-    class G agent;  
+    classDef agent fill:#d4edda,stroke:#28a745,stroke-width:2px;  
+    class C,D,G agent;  
      
-    classDef student fill:\#cce5ff,stroke:\#007bff,stroke-width:2px;  
-    class A student;  
-    class E student;
-
-```
+    classDef student fill:#cce5ff,stroke:#007bff,stroke-width:2px;  
+    class A,E student;
 
 ## Before/after impact
 
