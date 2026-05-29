@@ -1,9 +1,9 @@
 # 02 — Group Problem Statement
 ## Trình bày top 3
 
-\* Nhóm 4 người, mỗi người trình bày 3 candidates, tổng cộng 12 candidates.
+Nhóm 4 người, mỗi người trình bày 3 candidates, tổng cộng 12 candidates.
 
-| \\\# | Người đưa ra | Candidate problem | Người gặp vấn đề | Điểm nghẽn | Cảm nhận nhanh |  
+| \# | Người đưa ra | Candidate problem | Người gặp vấn đề | Điểm nghẽn | Cảm nhận nhanh |  
 | :---- | :---- | :---- | :---- | :---- | :---- |  
 | 1 | Trần Duy Anh | Viết CV ứng tuyển chuẩn kỹ thuật cho sinh viên | Sinh viên ngành kỹ thuật | Tự viết mô tả chi tiết dự án (chuẩn STAR) và căn chỉnh format | Workflow |  
 | 2 | Trần Duy Anh | Điều phối luồng giao thông tại nút giao | Cán bộ CSGT, chuyên viên quy hoạch | Thử nghiệm thực địa gây ùn tắc, đứng đếm xe thủ công | Workflow |  
@@ -29,17 +29,17 @@
 
 ## Shortlist và score
 
-\* Nhóm chọn ra 3 candidates có workflow rõ nét nhất đại diện cho các cluster.
+Nhóm chọn ra 3 candidates có workflow rõ nét nhất đại diện cho các cluster.
 
 | Candidate | Vì sao vào shortlist | Rủi ro / điều chưa rõ |  
 | :---- | :---- | :---- |  
-| 1\\. Giải thích logic & Debug (Vibe code chuẩn) | Workflow cụ thể (có human boundary rõ: ép học viên tự code lại). Pain point lớn nhất trong giáo dục. | Làm sao thiết kế Prompt Socratic Tutor đủ chặt để AI không "nhả" thẳng code cho học viên copy? |  
-| 2\\. Chấm và cộng điểm tương tác tự động | Workflow rất tĩnh và tuyến tính (Batch processing), thời gian tính bằng phút dễ đo đếm. | Rủi ro AI map sai tên do nickname giống nhau; có thể fix nhanh bằng Rule vận hành thay vì AI. |  
-| 3\\. Viết CV kỹ thuật chuẩn ATS | Nỗi đau thực tế chạm đến đầu ra việc làm. Có thể so sánh trước/sau rõ ràng. | Khó kiểm chứng ngay lập tức Metric "điểm ATS \\\> 80" hoặc tỷ lệ pass vòng gửi xe trong khuôn khổ làm Lab. |
+| 1. Giải thích logic & Debug (Vibe code chuẩn) | Workflow cụ thể (có human boundary rõ: ép học viên tự code lại). Pain point lớn nhất trong giáo dục. | Làm sao thiết kế Prompt Socratic Tutor đủ chặt để AI không "nhả" thẳng code cho học viên copy? |  
+| 2. Chấm và cộng điểm tương tác tự động | Workflow rất tĩnh và tuyến tính (Batch processing), thời gian tính bằng phút dễ đo đếm. | Rủi ro AI map sai tên do nickname giống nhau; có thể fix nhanh bằng Rule vận hành thay vì AI. |  
+| 3. Viết CV kỹ thuật chuẩn ATS | Nỗi đau thực tế chạm đến đầu ra việc làm. Có thể so sánh trước/sau rõ ràng. | Khó kiểm chứng ngay lập tức Metric "điểm ATS \\\> 80" hoặc tỷ lệ pass vòng gửi xe trong khuôn khổ làm Lab. |
 
 ## Score để đồng thuận
 
-\* Chấm 1-5.
+Chấm 1-5.
 
 | Candidate | Actor rõ | Workflow rõ | Pain có evidence | Impact đo được | Làm trong lab | So sánh R/W/A được | Nhóm hiểu domain | Tổng |  
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |  
@@ -53,15 +53,15 @@
 
 Vì sao chọn:  
 
-\* 1\\. Vấn đề cực kỳ sát sườn: Học viên nộp bài chạy được nhờ copy AI nhưng rỗng kiến thức là bài toán nhức nhối nhất của mô hình bootcamp.    
-\* 2\\. Thiết kế workflow có "Human boundary" rất chuẩn (AI chỉ gợi ý lỗi, học viên phải tự sửa).    
-\* 3\\. Metric rõ ràng (giảm gỡ lỗi từ 20' xuống 5', tỷ lệ hiểu bài \\\>70%).    
-\* 4\\. Rất dễ build prototype bằng một Workflow AI (Socratic Prompt) ngay trong buổi Lab để kiểm chứng ngay.  
+\* 1. Vấn đề cực kỳ sát sườn: Học viên nộp bài chạy được nhờ copy AI nhưng rỗng kiến thức là bài toán nhức nhối nhất của mô hình bootcamp.    
+\* 2. Thiết kế workflow có "Human boundary" rất chuẩn (AI chỉ gợi ý lỗi, học viên phải tự sửa).    
+\* 3. Metric rõ ràng (giảm gỡ lỗi từ 20' xuống 5', tỷ lệ hiểu bài \>70%).    
+\* 4. Rất dễ build prototype bằng một Workflow AI (Socratic Prompt) ngay trong buổi Lab để kiểm chứng ngay.  
 
  Vì sao không chọn các candidate còn lại:  
 
-\* 1\\. Chấm điểm tương tác: Bài toán giải quyết tốt thời gian cho TA, nhưng phần lõi lại là "đếm và so khớp chuỗi". Nhóm nhận định rủi ro có thể fix hoàn toàn bằng Rule (bắt đổi tên đúng format) và script, AI không thực sự tỏa sáng ở đây.    
-\* 2\\. Viết CV kỹ thuật: Rất tiềm năng nhưng tốn nhiều thời gian để dựng context mô tả dự án thô của sinh viên và khó đánh giá được độ chính xác của chuẩn ATS ngay trong lớp học.    
+\* 1. Chấm điểm tương tác: Bài toán giải quyết tốt thời gian cho TA, nhưng phần lõi lại là "đếm và so khớp chuỗi". Nhóm nhận định rủi ro có thể fix hoàn toàn bằng Rule (bắt đổi tên đúng format) và script, AI không thực sự tỏa sáng ở đây.    
+\* 2. Viết CV kỹ thuật: Rất tiềm năng nhưng tốn nhiều thời gian để dựng context mô tả dự án thô của sinh viên và khó đánh giá được độ chính xác của chuẩn ATS ngay trong lớp học.    
    
 Nếu có disagreement, nhóm xử lý thế nào:  
 
@@ -86,7 +86,7 @@ Nhóm đã hỏi 10 học viên thường xuyên gặp khó khăn trong giờ th
 Nhóm phỏng vấn 2 học viên và 1 TA để đào sâu hơn về hành vi này:
 
 \* **Lần gần nhất bạn gặp vấn đề này là khi nào?** "Ngay chiều qua lúc làm bài Lab vòng lặp. Bị kẹt lỗi cú pháp gần 30 phút."    
-\* **Bạn đang xử lý bằng workflow nào?** "Cố tự dò lỗi \\-\\\> Search Google \\-\\\> Nhắn hỏi TA nhưng TA bận \\-\\\> Sắp hết giờ nộp nên nhờ ChatGPT giải hộ luôn."    
+\* **Bạn đang xử lý bằng workflow nào?** "Cố tự dò lỗi \-\> Search Google \-\> Nhắn hỏi TA nhưng TA bận \-\> Sắp hết giờ nộp nên nhờ ChatGPT giải hộ luôn."    
 \* **Nếu tốt hơn, bạn muốn điều gì thay đổi?** "Mình muốn có người (hoặc tool) chỉ cho mình biết mình đang tư duy sai ở đâu, hoặc lỗi ở dòng nào để mình tự sửa, chứ đưa code sẵn thì mình không học được gì."
 
 ### Bảng tổng hợp kết quả Validation
@@ -112,7 +112,7 @@ Mình đã chọn lọc ra 3 case study kinh điển nhất trên thế giới v
 
 \`\`\`mermaid  
 flowchart TD  
-    A\[Sinh viên viết code\] \--\>|Báo lỗi đỏ| B(Đọc log lỗi)  
+    A\[Sinh viên viết code\] \-\>|Báo lỗi đỏ| B(Đọc log lỗi)  
     B \--\>|Không hiểu logic/Tiếng Anh| C\[Paste toàn bộ đề \+ lỗi vào ChatGPT\]  
     C \--\> D\[ChatGPT trả đoạn code fix sẵn\]  
     D \--\> E\[Sinh viên Copy & Paste đè lên code cũ\]  
