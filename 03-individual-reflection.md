@@ -1,4 +1,4 @@
-# 03 — Individual Reflection Example
+# 03 — Individual Reflection
 
 ## Đóng góp của tôi trong nhóm
 
