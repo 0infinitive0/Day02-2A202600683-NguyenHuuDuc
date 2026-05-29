@@ -112,7 +112,7 @@ Mình đã chọn lọc ra 3 case study kinh điển nhất trên thế giới v
 
 ```mermaid  
 flowchart TD
-    A[Sinh viên viết code] ->|Báo lỗi đỏ| B(Đọc log lỗi)  
+    A[Sinh viên viết code] -->|Báo lỗi đỏ| B(Đọc log lỗi)  
     B -->|Không hiểu logic/Tiếng Anh| C[Paste toàn bộ đề + lỗi vào ChatGPT]  
     C --> D[ChatGPT trả đoạn code fix sẵn]  
     D --> E[Sinh viên Copy & Paste đè lên code cũ]  
